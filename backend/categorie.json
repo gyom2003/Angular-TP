@@ -1,0 +1,381 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "HTML",
+      "questionLabel": "What is the purpose of the DOCTYPE declaration in HTML?"
+    },
+    {
+      "id": 2,
+      "category": "HTML",
+      "questionLabel": "What are semantic HTML elements?"
+    },
+    {
+      "id": 3,
+      "category": "HTML",
+      "questionLabel": "What is the difference between <div> and <span>?"
+    },
+    {
+      "id": 4,
+      "category": "HTML",
+      "questionLabel": "What are data attributes in HTML?"
+    },
+    {
+      "id": 5,
+      "category": "HTML",
+      "questionLabel": "Explain the purpose of the <meta> tag in HTML."
+    },
+    {
+      "id": 6,
+      "category": "CSS",
+      "questionLabel": "What is the CSS Box Model?"
+    },
+    {
+      "id": 7,
+      "category": "CSS",
+      "questionLabel": "Explain the difference between flexbox and grid."
+    },
+    {
+      "id": 8,
+      "category": "CSS",
+      "questionLabel": "What are CSS pseudo-classes?"
+    },
+    {
+      "id": 9,
+      "category": "CSS",
+      "questionLabel": "What is the difference between position: relative, absolute, and fixed?"
+    },
+    {
+      "id": 10,
+      "category": "CSS",
+      "questionLabel": "What are CSS media queries used for?"
+    },
+    {
+      "id": 11,
+      "category": "JavaScript",
+      "questionLabel": "What is the difference between let, const, and var?"
+    },
+    {
+      "id": 12,
+      "category": "JavaScript",
+      "questionLabel": "Explain what a Promise is in JavaScript."
+    },
+    {
+      "id": 13,
+      "category": "JavaScript",
+      "questionLabel": "What is the difference between map and forEach?"
+    },
+    {
+      "id": 14,
+      "category": "JavaScript",
+      "questionLabel": "What is closure in JavaScript?"
+    },
+    {
+      "id": 15,
+      "category": "JavaScript",
+      "questionLabel": "Explain what is hoisting in JavaScript."
+    }
+  ],
+  "answers": [
+    {
+      "questionId": 1,
+      "answerLabel": "DOCTYPE declares the HTML version and helps browsers render the page correctly",
+      "isCorrect": true
+    },
+    {
+      "questionId": 1,
+      "answerLabel": "DOCTYPE is used for styling web pages",
+      "isCorrect": false
+    },
+    {
+      "questionId": 1,
+      "answerLabel": "DOCTYPE is used for JavaScript functionality",
+      "isCorrect": false
+    },
+    {
+      "questionId": 1,
+      "answerLabel": "DOCTYPE is only used for legacy browsers",
+      "isCorrect": false
+    },
+    {
+      "questionId": 2,
+      "answerLabel": "Elements that clearly describe their meaning/purpose (like header, nav, footer)",
+      "isCorrect": true
+    },
+    {
+      "questionId": 2,
+      "answerLabel": "Elements that only provide visual styling",
+      "isCorrect": false
+    },
+    {
+      "questionId": 2,
+      "answerLabel": "Elements used for JavaScript interaction",
+      "isCorrect": false
+    },
+    {
+      "questionId": 2,
+      "answerLabel": "Elements that are deprecated in HTML5",
+      "isCorrect": false
+    },
+    {
+      "questionId": 3,
+      "answerLabel": "div is a block-level element while span is an inline element",
+      "isCorrect": true
+    },
+    {
+      "questionId": 3,
+      "answerLabel": "They are exactly the same",
+      "isCorrect": false
+    },
+    {
+      "questionId": 3,
+      "answerLabel": "span is used only for styling",
+      "isCorrect": false
+    },
+    {
+      "questionId": 3,
+      "answerLabel": "div is only used for JavaScript",
+      "isCorrect": false
+    },
+    {
+      "questionId": 4,
+      "answerLabel": "Custom attributes prefixed with 'data-' to store extra information",
+      "isCorrect": true
+    },
+    {
+      "questionId": 4,
+      "answerLabel": "Attributes only used for CSS styling",
+      "isCorrect": false
+    },
+    {
+      "questionId": 4,
+      "answerLabel": "Attributes for form validation",
+      "isCorrect": false
+    },
+    {
+      "questionId": 4,
+      "answerLabel": "Attributes for SEO purposes only",
+      "isCorrect": false
+    },
+    {
+      "questionId": 5,
+      "answerLabel": "Provides metadata about the HTML document",
+      "isCorrect": true
+    },
+    {
+      "questionId": 5,
+      "answerLabel": "Used only for styling purposes",
+      "isCorrect": false
+    },
+    {
+      "questionId": 5,
+      "answerLabel": "Contains visible content on the page",
+      "isCorrect": false
+    },
+    {
+      "questionId": 5,
+      "answerLabel": "Used only for JavaScript functionality",
+      "isCorrect": false
+    },
+    {
+      "questionId": 6,
+      "answerLabel": "A model that defines how elements' content, padding, border, and margin are laid out",
+      "isCorrect": true
+    },
+    {
+      "questionId": 6,
+      "answerLabel": "A model for 3D animations",
+      "isCorrect": false
+    },
+    {
+      "questionId": 6,
+      "answerLabel": "A model for color schemes",
+      "isCorrect": false
+    },
+    {
+      "questionId": 6,
+      "answerLabel": "A model for JavaScript objects",
+      "isCorrect": false
+    },
+    {
+      "questionId": 7,
+      "answerLabel": "Flexbox is one-dimensional while Grid is two-dimensional layout system",
+      "isCorrect": true
+    },
+    {
+      "questionId": 7,
+      "answerLabel": "They are exactly the same",
+      "isCorrect": false
+    },
+    {
+      "questionId": 7,
+      "answerLabel": "Grid is only for mobile devices",
+      "isCorrect": false
+    },
+    {
+      "questionId": 7,
+      "answerLabel": "Flexbox is only for desktop layouts",
+      "isCorrect": false
+    },
+    {
+      "questionId": 8,
+      "answerLabel": "Special selectors that target elements in specific states",
+      "isCorrect": true
+    },
+    {
+      "questionId": 8,
+      "answerLabel": "Classes that only work in modern browsers",
+      "isCorrect": false
+    },
+    {
+      "questionId": 8,
+      "answerLabel": "Selectors that are deprecated",
+      "isCorrect": false
+    },
+    {
+      "questionId": 8,
+      "answerLabel": "Classes that only work with JavaScript",
+      "isCorrect": false
+    },
+    {
+      "questionId": 9,
+      "answerLabel": "Relative positions relative to normal position, absolute to nearest positioned ancestor, fixed to viewport",
+      "isCorrect": true
+    },
+    {
+      "questionId": 9,
+      "answerLabel": "They are all the same positioning methods",
+      "isCorrect": false
+    },
+    {
+      "questionId": 9,
+      "answerLabel": "They only work in modern browsers",
+      "isCorrect": false
+    },
+    {
+      "questionId": 9,
+      "answerLabel": "They are only used for animations",
+      "isCorrect": false
+    },
+    {
+      "questionId": 10,
+      "answerLabel": "To create responsive designs that adapt to different screen sizes and devices",
+      "isCorrect": true
+    },
+    {
+      "questionId": 10,
+      "answerLabel": "To query JavaScript databases",
+      "isCorrect": false
+    },
+    {
+      "questionId": 10,
+      "answerLabel": "To create animations",
+      "isCorrect": false
+    },
+    {
+      "questionId": 10,
+      "answerLabel": "To validate forms",
+      "isCorrect": false
+    },
+    {
+      "questionId": 11,
+      "answerLabel": "let and const have block scope, var has function scope; const can't be reassigned",
+      "isCorrect": true
+    },
+    {
+      "questionId": 11,
+      "answerLabel": "They are all exactly the same",
+      "isCorrect": false
+    },
+    {
+      "questionId": 11,
+      "answerLabel": "They are only used in older JavaScript versions",
+      "isCorrect": false
+    },
+    {
+      "questionId": 11,
+      "answerLabel": "They are only used for declaring functions",
+      "isCorrect": false
+    },
+    {
+      "questionId": 12,
+      "answerLabel": "An object representing the eventual completion of an asynchronous operation",
+      "isCorrect": true
+    },
+    {
+      "questionId": 12,
+      "answerLabel": "A way to declare variables",
+      "isCorrect": false
+    },
+    {
+      "questionId": 12,
+      "answerLabel": "A type of loop in JavaScript",
+      "isCorrect": false
+    },
+    {
+      "questionId": 12,
+      "answerLabel": "A way to create objects",
+      "isCorrect": false
+    },
+    {
+      "questionId": 13,
+      "answerLabel": "map creates a new array with results, forEach just iterates without creating new array",
+      "isCorrect": true
+    },
+    {
+      "questionId": 13,
+      "answerLabel": "They are exactly the same",
+      "isCorrect": false
+    },
+    {
+      "questionId": 13,
+      "answerLabel": "map is only for strings",
+      "isCorrect": false
+    },
+    {
+      "questionId": 13,
+      "answerLabel": "forEach is only for numbers",
+      "isCorrect": false
+    },
+    {
+      "questionId": 14,
+      "answerLabel": "A function's ability to access variables from its outer scope even after the outer function has returned",
+      "isCorrect": true
+    },
+    {
+      "questionId": 14,
+      "answerLabel": "A way to close browser windows",
+      "isCorrect": false
+    },
+    {
+      "questionId": 14,
+      "answerLabel": "A method to end JavaScript execution",
+      "isCorrect": false
+    },
+    {
+      "questionId": 14,
+      "answerLabel": "A way to delete variables",
+      "isCorrect": false
+    },
+    {
+      "questionId": 15,
+      "answerLabel": "The behavior of moving declarations to the top of their scope before code execution",
+      "isCorrect": true
+    },
+    {
+      "questionId": 15,
+      "answerLabel": "A way to import JavaScript files",
+      "isCorrect": false
+    },
+    {
+      "questionId": 15,
+      "answerLabel": "A method to optimize code",
+      "isCorrect": false
+    },
+    {
+      "questionId": 15,
+      "answerLabel": "A type of loop",
+      "isCorrect": false
+    }
+  ]
+}
