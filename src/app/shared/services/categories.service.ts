@@ -1,0 +1,57 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class CategoriesService {
+    categories_ref: any[] = [];
+    selectedCategory: number = 0;
+    playerAnswers: {questionId: number; answer: string}[] = [];
+    score = 0;
+    isQuizFinished = false;
+    playerName: string = '';
+
+    constructor(private http: HttpClient) {}
+    
+    checkAnswers() {
+    this.score = 0;
+    for (let i = 0; i < this.playerAnswers.length; i++) {
+      const question = this.categories_ref.find((q) => q.id === this.playerAnswers[i].questionId);
+      if (!question) continue;
+      for (let j = 0; j < question.answers.length; j++) {
+        const currentAnswer = question.answers[j];
+        if (currentAnswer?.isCorrect && this.playerAnswers[i].answer === currentAnswer.answerLabel) {
+          this.score += 1;
+          break;
+        }
+      }
+    }
+    this.isQuizFinished = true;
+  }
+
+   addAnswer(answer: string, questionId: number) {
+    const isAnswered = this.playerAnswers.find((a) => a.questionId === questionId);
+    if (isAnswered) {
+      isAnswered.answer = answer;
+      return;
+    }
+    this.playerAnswers.push({questionId, answer});
+  }
+
+  
+  getCategoriesContent(category: number) {
+    this.http.get(`http://localhost:3000/categories?category=${category}`).subscribe((questions: any) => {
+        for (const question of questions) {}
+    });
+  }
+
+   resetCategories() {
+    this.categories_ref = [];
+    this.playerAnswers = [];
+    this.score = 0;
+    this.isQuizFinished = false;
+  }
+    
+}

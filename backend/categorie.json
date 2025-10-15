@@ -2,84 +2,84 @@
   "questions": [
     {
       "id": 1,
-      "category": "HTML",
-      "questionLabel": "What is the purpose of the DOCTYPE declaration in HTML?"
+      "category": 0,
+      "questionLabel": "What is the purpose of the DOCTYPE declaration in 0?"
     },
     {
       "id": 2,
-      "category": "HTML",
-      "questionLabel": "What are semantic HTML elements?"
+      "category": 0,
+      "questionLabel": "What are semantic 0 elements?"
     },
     {
       "id": 3,
-      "category": "HTML",
+      "category": 0,
       "questionLabel": "What is the difference between <div> and <span>?"
     },
     {
       "id": 4,
-      "category": "HTML",
-      "questionLabel": "What are data attributes in HTML?"
+      "category": 0,
+      "questionLabel": "What are data attributes in 0?"
     },
     {
       "id": 5,
-      "category": "HTML",
-      "questionLabel": "Explain the purpose of the <meta> tag in HTML."
+      "category": 0,
+      "questionLabel": "Explain the purpose of the <meta> tag in 0."
     },
     {
       "id": 6,
-      "category": "CSS",
+      "category": 1,
       "questionLabel": "What is the CSS Box Model?"
     },
     {
       "id": 7,
-      "category": "CSS",
+      "category": 1,
       "questionLabel": "Explain the difference between flexbox and grid."
     },
     {
       "id": 8,
-      "category": "CSS",
+      "category": 1,
       "questionLabel": "What are CSS pseudo-classes?"
     },
     {
       "id": 9,
-      "category": "CSS",
+      "category": 1,
       "questionLabel": "What is the difference between position: relative, absolute, and fixed?"
     },
     {
       "id": 10,
-      "category": "CSS",
+      "category": 1,
       "questionLabel": "What are CSS media queries used for?"
     },
     {
       "id": 11,
-      "category": "JavaScript",
+      "category": 2,
       "questionLabel": "What is the difference between let, const, and var?"
     },
     {
       "id": 12,
-      "category": "JavaScript",
+      "category": 2,
       "questionLabel": "Explain what a Promise is in JavaScript."
     },
     {
       "id": 13,
-      "category": "JavaScript",
+      "category": 2,
       "questionLabel": "What is the difference between map and forEach?"
     },
     {
       "id": 14,
-      "category": "JavaScript",
+      "category": 2,
       "questionLabel": "What is closure in JavaScript?"
     },
     {
       "id": 15,
-      "category": "JavaScript",
+      "category": 2,
       "questionLabel": "Explain what is hoisting in JavaScript."
     }
   ],
   "answers": [
     {
       "questionId": 1,
-      "answerLabel": "DOCTYPE declares the HTML version and helps browsers render the page correctly",
+      "answerLabel": "DOCTYPE declares the 0 version and helps browsers render the page correctly",
       "isCorrect": true
     },
     {
@@ -114,7 +114,7 @@
     },
     {
       "questionId": 2,
-      "answerLabel": "Elements that are deprecated in HTML5",
+      "answerLabel": "Elements that are deprecated in 05",
       "isCorrect": false
     },
     {
@@ -159,7 +159,7 @@
     },
     {
       "questionId": 5,
-      "answerLabel": "Provides metadata about the HTML document",
+      "answerLabel": "Provides metadata about the 0 document",
       "isCorrect": true
     },
     {
