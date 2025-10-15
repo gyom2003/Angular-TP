@@ -6,3 +6,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Data accessible à partir de la console.
 
 - Chargement du questionnaire selon la catégorie.
+
+Le Formal Guillaume
+Verdiane KOCOUVISSO PLOMEY
