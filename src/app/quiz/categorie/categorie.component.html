@@ -1,11 +1,9 @@
 <div class="categorie-container">
     <h2>Catégories</h2>
     <p>Choisissez une catégorie pour voir le quiz</p>
-    <!-- <div class="categorie-search">
-        <input type="text" placeholder="Chercher une catégorie..." [(ngModel)]="searchTerm">
-        <button (click)="searchCategories()">Chercher</button>
-    </div> -->
-    <!-- <div class="categorie-card" *ngFor="let categorie of categories" (click)="selectCategorie(categorie.id)">
-        <button>{{categorie.name}}</button>
-    </div> -->
+    <div class="login_form-container">
+       <button class="btn" (click)="selectCategory('HTML')">HTML</button>
+        <button class="btn"(click)="selectCategory('CSS')">CSS</button>
+         <button class="btn" (click)="selectCategory('Angular')">Angular</button>
+    </div>
 </div>

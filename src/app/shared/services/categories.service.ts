@@ -7,11 +7,15 @@ import { HttpClient } from "@angular/common/http";
 
 export class CategoriesService {
     categories_ref: any[] = [];
-    selectedCategory: number = 0;
+    selectedCategory: string = '';
     playerAnswers: {questionId: number; answer: string}[] = [];
     score = 0;
     isQuizFinished = false;
     playerName: string = '';
+
+    setSelectedCategory(category: string) {
+        this.selectedCategory = category;
+    }
 
     constructor(private http: HttpClient) {}
     
@@ -41,9 +45,20 @@ export class CategoriesService {
   }
 
   
-  getCategoriesContent(category: number) {
-    this.http.get(`http://localhost:3000/categories?category=${category}`).subscribe((questions: any) => {
-        for (const question of questions) {}
+  getCategoriesContent(category: string) {
+    return this.http.get(`http://localhost:3000/questions?category=${category}`).subscribe((questions: any) => {
+        this.categories_ref = questions;
+        console.log('Questions chargées:', questions);
+
+         for (const question of questions) {
+        this.http.get(`http://localhost:3000/answers?questionId=${question.id}`).subscribe((answers: any) => {
+          this.categories_ref.push({
+              id: question.id,
+              question: question.questionLabel,
+              answers
+          });
+        });
+      }
     });
   }
 

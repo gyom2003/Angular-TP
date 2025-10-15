@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { CategoriesService } from 'src/app/shared/services/categories.service';
 
 @Component({
   selector: 'app-categorie',
@@ -7,16 +8,23 @@ import { Router } from "@angular/router";
   templateUrl: './categorie.component.html',
   styleUrl: './categorie.component.scss'
 })
-export class CategorieComponent {
+export class CategorieComponent implements OnInit {
+  categories: string[] = ['HTML', 'CSS', 'Angular'];
+  selectedCategory: string | null = null;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private categorieService: CategoriesService) { }
 
-  categories = [{id: 1, name: 'HTML'},{id: 2, name: 'CSS'},{id: 3, name: 'Java'},]
+  ngOnInit(): void {
+    this.categorieService.resetCategories();
+  }
 
-  //  goToCategorieQuiz() {
-  //   // this.router.navigate(['/quiz', this.playerName]);
-  //   this.router.navigate(['/categories', this.Cate]);
-  // }
+  selectCategory(category: string) {
+    this.selectedCategory = category;
+    this.categorieService.setSelectedCategory(category);
+    this.categorieService.getCategoriesContent(category);
+    this.categorieService.getCategoriesContent(category);
+    //this.router.navigate(['/quiz']);
+  }
 
 
 }

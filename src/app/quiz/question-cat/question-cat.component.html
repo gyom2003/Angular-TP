@@ -1,0 +1,11 @@
+<section *ngIf="loaded">
+  <section class="question_container" *ngFor="let question of questions; let i = index">
+    <h4 class="question_label"><b>Question {{ i + 1 }} :</b> {{ question.questionLabel }}</h4>
+    <app-answer-cat
+      [answers]="getAnswersForQuestion(question.id)"
+      [questionId]="question.id"
+      (answerSelected)="addAnswer($event, question.id)"
+    ></app-answer-cat>
+  </section>
+</section>
+<div *ngIf="!loaded">Chargement...</div>
